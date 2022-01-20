@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./fb.css">
+    <script src="https://kit.fontawesome.com/c4626ff7ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section>
+        <center>
+        <div>
+        <h1>facebook</h1>
+        <br>
+        <p>Facebook helps you to connect <br> share with the people.</p>
+    </div>
+</center>
+    <div class="formbox">
+        <form>
+        
+            <input type="email" placeholder="Enter your email-id ">
+            <br>
+            <br/>
+            <input type="password" placeholder="Enter password" id="password" >
+            <span class="eye" onclick="myfunction()"><i id="hide1" class="fas fa-eye"></i>
+                <i id="hide2" class="fas fa-eye-slash"></i></span>
+            <br>
+            <br/>
+            <div class="btn">
+            <button >Login</button>
+            <br/>
+            <br/>
+            <a href="List.html">Forgot password?</a>
+            <br/>
+            <br/>
+            <hr/>
+            <br>
+            <button >Create New Account</button>
+        </div>
+        
+        </form>
+
+        
+    </div>
+    
+    </section>  
+    <script>
+        function myfunction(){
+            const pass = document.getElementById("password");
+            const show=document.getElementById("hide1");
+            const hide=document.getElementById("hide2");
+        if(pass.type == "password"){
+            pass.type = "text";
+            show.style.display='block';
+            hide.style.display='none';
+                }
+        else{
+            pass.type = "password";
+            show.style.display='none';
+            hide.style.display='block';
+        }
+        
+        
+        }
+
+        </script>
+        
+</body>
+</html>

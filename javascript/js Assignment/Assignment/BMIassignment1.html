@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI calculator</title>
+    <script>
+         var BMI = 25.23;
+    if(BMI <11 ||BMI >200 || isNaN(BMI) === true || typeof(BMI)!== "number")
+        {
+            console.log("Invalid");
+        }
+        else if(BMI >= 11.0 && BMI <= 14.9)
+        {
+            console.log("underweight");
+        }
+        else if(BMI >= 15.0 && BMI <= 19.9)
+        {
+            console.log("Healthy weight");
+        }
+        else if(BMI >= 25.0 && BMI <= 29.9)
+        {
+            console.log("over weight");
+        }
+        else
+        {
+            console.log("obese");
+        }
+
+
+
+        //ternary 
+
+        var result = (BMI <11 || BMI >200 || isNaN(BMI) === true || typeof(BMI)!== "number")?"invalid":
+            (BMI >= 11.0 && BMI <= 14.9)?"underweight":
+            (BMI >= 15.0 && BMI <= 19.9)?"Healthy":
+            (BMI >= 25.0 && BMI <= 29.9)?"overweight":"obese"
+            console.log("result",result);
+
+    </script>
+</head>
+<body>
+    <h1>BMI Calculator</h1>
+    
+</body>
+</html>

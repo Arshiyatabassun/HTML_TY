@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="formvalidation.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" action="/" name="Myform">
+        <h1>FORM</h1>
+
+        <!-- ====================userNAme========================= -->
+        <div class="input-control">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" />
+          <div class="error"></div>
+        </div>
+        <!-- ====================email========================= -->
+
+        <div class="input-control">
+          <label for="email" style="margin-right: 22px">Email</label>
+          <input id="email" name="email" type="text" />
+          <div class="error"></div>
+        </div>
+
+        <!-- ====================password========================= -->
+
+        <div class="input-control">
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" />
+
+          <div class="error"></div>
+        </div>
+
+        <!-- ====================Age========================= -->
+
+        <div class="input-control">
+          <label for="age">Age</label>
+          <input id="age" name="age" type="number" />
+          <div class="error"></div>
+        </div>
+        <!-- <br />
+        <br /> -->
+
+        <!-- ====================Gender========================= -->
+        <div class="genderclass">
+          <label for="" id="gender"> <b>Gender</b></label>
+          <!-- <div class="radio-control"> -->
+          <input
+            class="radio-check-input"
+            type="radio"
+            name="radioOptions"
+            id="radio1"
+            value="option1"
+          />
+          <label class="radio-check-label" for="radio1">Male</label>
+          <!-- </div> -->
+          <!-- <div class="radio-control"> -->
+          <input
+            class="radio-check-input"
+            type="radio"
+            name="radioOptions"
+            id="radio2"
+            value="option2"
+          />
+          <label class="radio-check-label" for="radio2">Female</label>
+          <!-- </div> -->
+          <div class="error" id="radspan"></div>
+        </div>
+        <!-- <br />
+        <br />
+        <br /> -->
+
+        <!-- ====================Subjects studied========================= -->
+
+        <label for="" id="subjects"> <b>Subjects Studied</b></label>
+        <!-- <br /><br /> -->
+
+        <div class="check-control">
+          <input
+            class="check-input"
+            type="checkbox"
+            name="inlineCheckboxOptions"
+            id="check0"
+            value="HTML"
+          />
+          <label class="checkbox-label" for="check0">HTML</label>
+          <input
+            class="check-input"
+            type="checkbox"
+            id="check1"
+            value="CSS"
+          />
+          <label class="check-label" for="check1">CSS</label>
+          <input
+            class="check-input"
+            type="checkbox"
+            id="check2"
+            value="JAVA SCRIPT"
+          />
+          <label class="check-label" for="check2">JAVA SCRIPT</label>
+
+          <input
+            class="check-input"
+            type="checkbox"
+            id="check3"
+            value="NODE JS"
+          />
+          <label class="check-label" for="check3">NODE JS</label>
+
+          <input
+            class="check-input"
+            type="checkbox"
+            id="check4"
+            value="JAVA"
+          />
+          <label class="check-label" for="check4">JAVA</label>
+          <div class="error" id="checkspan"></div>
+        </div>
+        <!-- <br> -->
+        <!-- <br /> -->
+        <!---------------------------- Select state -------------------------------------------------------->
+
+        <label for="selectSatates" id="states-label"> <b>State</b></label>
+        <div class="input-control">
+          <!-- <br /> -->
+          <select class="custom-select" id="selectStates">
+            <option selected disabled value="">Choose...</option>
+            <option>Karnataka</option>
+            <option>Kerala</option>
+            <option>Goa</option>
+            <option>Tamilnadu</option>
+          </select>
+          <div class="error" id="checkspan"></div>
+        </div>
+        <!-- <br /><br /><br /> -->
+
+        <!---------------------------- Terms and condition -------------------------------------------------------->
+        <label class="check-terms" for="checkAg"
+          >Agree Terms & conditions</label
+        >
+        <div class="termsdiv">
+          <input
+            class="check-agree"
+            type="checkbox"
+            name="agreeInput"
+            id="checkag"
+            value="agree"
+          />
+
+          <div class="error" id="agspan"></div>
+        </div>
+        <!-- <br> -->
+        <!-- <br /> -->
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+
+    <script src="./formvalidation.js"></script>
+  </body>
+</html>

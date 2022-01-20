@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+</head>
+<body>
+    <script>
+    // let fruits ={
+    //     fName:'Apple',
+    //     fColor:'Blue',
+    //     fsize:20,
+    //     getFruitFulName:function(){
+    //         return this.fName;
+    //     }
+    // }
+    // console.log(fruits);
+    // console.log(fruits.fName);
+    // console.log(fruits.getFruitFulName());
+    // console.log(fruits['fColor']);
+
+//     let fruits = new Object();
+//     fruits.fName='PineApple';
+//     fruits.fColor='red';
+//    getFulColor=function(){
+//         return this.fColor;
+//     }
+//     console.log(fruits);
+//     //console.log(fruits.getFulColor());
+//     console.log(fruits['fName']);
+
+//     console.log(typeof fruits);
+
+//     let flower =['lilly','sunflower','rose']
+//     console.log(flower.length);
+//     console.log((flower[0]));
+//     console.log(typeof(flower));
+    
+//     let person =new Array('Arshi','Taba','Aalim','mohsin',{color:'fare'})
+//   // let person =new Array(10)
+//     console.log(person.length);
+//     console.log(person[4].color);
+//     console.log(person[4].length);
+    
+//     console.log(person[0]);
+
+//     const bike ={
+//         bName:'KTM',
+//         bColor:'yellow',
+//         bBrand:'AB'
+//     }
+//     for(let bikes in bike){
+//         console.log(bikes);
+//     }
+
+//     for(let index in bike){
+//        // console.log(`${index} - ${bike[index]}`);
+//        console.log(bike[index]);
+//     }
+
+//      let person1 = new Array('Arshi','Aalim')  
+//     // for(let key of person1)
+//     // {
+//     //     console.log(key);
+//     // }
+//    // let person1 = new Object()
+//     // person1.name='Arshi';
+//     // person1.age =26;
+//     // person1.color ='fare';
+//     for(let key of person1){
+//         console.log(key);
+//     }
+
+//     //ArrayMethods
+//     let fruits1 = ['Apple','Banana','Orange','PineApple','chikku','Papaya']
+//      let fruits1length = fruits1.push();
+//      console.log(fruits1length);
+//     console.log('push element is -',fruits1.push('pear'));
+//     console.log(fruits1.push());//6
+//     console.log(fruits1);//apple banana orange pineapple chikku papaya pear
+
+//     console.log(fruits1.pop());
+//     let deletedElement = fruits1.pop();
+//     console.log(deletedElement);
+
+//     let shiftElement =fruits1.shift();
+//     console.log(shiftElement);
+
+//     let unshifted =fruits1.unshift();
+//     console.log(unshifted);
+
+//     let shift =fruits1.shift();
+//     console.log(shift);
+
+
+
+//     console.log(fruits1.includes('Orange'));
+//     console.log(fruits1);
+
+//     console.log(fruits1.indexOf('chikku'));
+
+//     console.log(fruits1.indexOf('Papaya'));
+
+//     let result =Array.isArray(fruits1);
+//     console.log(result);
+
+//find
+    const age =[3,10,18,20]
+
+
+        function checkAge(age)  {
+        return age > 18 
+    }
+    console.log(age.find(checkAge)); //age.findIndex(checkAge)
+
+   const arr1 =[0,1,2,3,[4,5,6]];
+   console.log(arr1.flat());
+
+   const arr2 =[0,2,3,4,[[4,5,6,7,8]]]
+   console.log(arr2.flat(2));
+
+   const arr3 =[10,50,70,30,20,0,11,1,1000,10000];
+   console.log(arr3.sort());
+
+   function add(a,b){
+       return a-b;
+   }
+    console.log(arr3.sort())
+    console.log(arr3.reverse());
+    const biscuits =['ParleG','Sunfeast','Darkfantacy','Bounce'];
+    console.log(biscuits.sort());
+    //  const value= function(value, => {
+    //     return value > 'S'
+    // });
+    console.log(biscuits.sort());
+
+    console.log(biscuits.reverse());
+
+
+const student ={
+    sName:'Arshi',
+    sAge :20,
+    sId:25,
+    getStudentAddress:function () 
+    {
+        return this.sName +'' +this.sAge;
+    }
+}
+console.log(Object.keys(student));
+console.log(Object.values(student));
+console.log(Object.entries(student));
+
+let text ='Hello World';
+let result =text.toString();
+console.log(result);
+
+const student2 =Object.create(student)
+student2.sName ="Aallim";
+student2.sAge =2;
+
+console.log(student2);
+const target ={a:1,b:3}
+const source ={a:4 ,c:2}
+const returnedTarget = Object.assign(target,source);
+console.log(target);
+console.log(returnedTarget);
+
+const car ={
+    cName:'kia',
+    cColor:'blue'
+
+}
+ console.log(Object.freeze(car));
+
+car.cColor='grey';
+console.log(car.cColor);
+
+const numbers =[10,20,30,40,60,80,70,50,30]
+const deletedElement =numbers.splice(2,3,1,2,3);
+console.log(deletedElement);
+console.log(numbers);
+
+const fr = ['Apple','Mango','Banana','kiwi']
+const deletfr = fr.slice(0,2);
+console.log(deletfr);
+console.log(fr);
+
+const Laptop={
+    lName:'Lenovo',
+    lColor:'grey',
+    lMemory:'8GB',
+    moreDetails:{
+        lProcessor:'i5',
+        lSize:'24inch'
+    }
+}
+const LaptopCopy ={
+    ...Laptop,
+    moreDetails:{...Laptop.moreDetails}
+}
+Laptop.moreDetails.lProcessor ="i10"
+console.log(Laptop);
+console.log(LaptopCopy);
+console.log(Laptop.moreDetails.lProcessor);
+
+const n =[10,20,30]
+const n1 =n;
+console.log(n.slice(0));
+//rest
+function addAllValues(a,b,...rest){
+    console.log(a,b,rest);
+}
+addAllValues(10,20,30);
+
+
+//class
+
+class Bike{
+    constructor(cname,cyear){
+        this.cname =cname;
+        this.cyear=cyear;
+    }
+
+}
+const bike1 =new Bike('Ktm',2020);
+console.log(bike1);
+
+</script>
+</body>
+</html>

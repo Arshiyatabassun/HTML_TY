@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href ="./asscendingdesesecnding.css">
+    
+</head>
+
+<body>
+    <div id="navbar">
+        <div><button id="btn" onclick="fetchPosts()" value="ascending">Show List</button>
+            <button id="sortbtn" onclick="sort(),search()">Descending</button>
+        </div>
+        <div><input type="text" id="input" placeholder=" search" onkeyup="search()">
+             <!-- <button onclick="saveData()">save</button> -->
+        </div>
+    </div>
+    <table id="table" border="1px">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>User Id</th>
+                <th>Title</th>
+                <th>body</th>
+            </tr>
+        </thead>
+
+        <tbody id="tableBody">
+
+
+        </tbody>
+    </table>
+
+    <script src="./asscendingdescending.js"></script>
+</body>
+
+</html>

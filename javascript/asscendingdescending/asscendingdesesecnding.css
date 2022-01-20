@@ -1,0 +1,69 @@
+
+
+* {
+    margin: auto;
+    /* background-color: rgb(71, 136, 156); */
+    background-image: url("https://thumbs.dreamstime.com/b/transparent-background-light-turqouise-yellow-colors-45303781.jpg");
+}
+
+thead {
+    width: 700px;
+}
+
+thead,
+tbody,
+td,
+th {
+    padding: 8px;
+
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th {
+    /* background-color: rgb(199, 101, 101); */
+    color: rgb(37, 37, 83);
+
+}
+
+tr {
+    background-color: rgb(194, 181, 181);
+    color: black
+}
+
+#navbar {
+    margin:0%;
+    outline: rgb(184, 124, 124) 2px solid;
+    width: 100vw;
+    height: 50px;
+    display: flex;
+}
+
+#input {
+    width: 350px;
+    height: 35px;
+    font-size: x-large;
+    border: grey 1px solid;
+    border-radius: 6px;
+}
+
+#btn,
+#sortbtn {
+    padding: 5px;
+    /* width: 55px; */
+    font-size:small;
+    border-color: rgb(194, 52, 52);
+    /* border-radius: 10px; */
+}
+
+#btn:hover,
+#sortbtn:hover {
+    padding: 5px;
+
+    font-size:large;
+    /* border: none; */
+    /* border: 10px; */
+}
+

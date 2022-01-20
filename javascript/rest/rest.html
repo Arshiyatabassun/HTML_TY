@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <input type ="text" name="username" id ="username"  placeholder ="username" required>
+    <label>UserName</label>
+    <span  id ="uspan"></span>
+    <br>
+    <input type ="password" name= "password" id ="pass" placeholder ="password" required>
+    <label>Password</label>
+   <span  id ="pspan"></span>
+    <button onclick ="validate()">submit</button>
+    
+    <!-- <script src="./rest.js"></script> -->
+    <script>
+       function validate(){
+        username();
+       }
+
+       function username(){
+           const uname = document.getElementById('username');
+           const userVal = uname.value;
+        const uspan = document.getElementById("uspan")
+
+        if(userVal == ""){
+            uspan.innerHTML = 'entersomthig'
+            uspan.style.color ="red"
+        }
+         else{
+            uspan.innerHTML = 'looks gud'
+            uspan.style.color ="green"
+
+        }
+
+       }
+    </script>
+</body>
+</html>

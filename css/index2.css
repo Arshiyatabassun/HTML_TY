@@ -1,0 +1,18 @@
+a:hover
+{
+   color:red;
+   box-shadow: 0px 0px 30px indianred;
+}
+a:active
+{
+   color:hotpink;
+}
+ /*a:focus 
+{
+ color:green;
+}*/ 
+a:visited
+{
+    color:navy;
+} 
+
